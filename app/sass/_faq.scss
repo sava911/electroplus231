@@ -1,0 +1,96 @@
+.faq {
+  margin-bottom: 40px;
+}
+
+.details__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Detail styling */
+.details {
+  --padding: 10px;
+  border-bottom: 1px solid var(--acc-color);
+  // border-radius: 4px;
+  // background: var(--bg-color);
+
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-lg);
+  max-width: 750px;
+}
+
+.details+.details {
+  margin-top: 15px;
+}
+
+.details__title {
+  --width: 12px;
+  --height: 2px;
+  --radius: 1px;
+  --color: currentColor;
+  margin: 0;
+  padding: var(--padding) calc(var(--width) * 2) var(--padding) var(--padding);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  position: relative;
+}
+
+.details__title:before,
+.details__title:after {
+  content: '';
+  display: block;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--color);
+  position: absolute;
+  border-radius: var(--radius);
+  top: calc(50% - (var(--height) / 2));
+  right: calc(var(--width) / 2);
+  transition: all .2s ease-in-out;
+}
+
+.details__title:after {
+  rotate: 90deg;
+}
+
+.details__container[open] .details__title:before {
+  rotate: 45deg;
+  color: var(--acc-color);
+  /* rotate: 135deg; */
+}
+
+.details__container[open] .details__title:after {
+  rotate: 135deg;
+  color: var(--acc-color);
+  /* rotate: 225deg; */
+}
+
+.details__container[open] .details__title {
+  background-color: var(--bg-color);
+}
+
+.details__summary::marker {
+  content: '';
+}
+
+.details__desc {
+  visibility: hidden;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  padding-inline: var(--padding);
+  pointer-events: none;
+
+}
+
+.details__container[open]+.details__desc {
+  visibility: visible;
+  grid-template-rows: 1fr;
+  padding-block: var(--padding);
+}
+
+.details__desc-inner {
+  min-height: 0;
+}
