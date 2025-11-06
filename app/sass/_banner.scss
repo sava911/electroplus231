@@ -1,6 +1,6 @@
 .bar {
   padding-top: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 
   &__inner {
     display: grid;
@@ -54,15 +54,15 @@
 
 
   &__text {
-    font-size: 24px;
+    font-size: 35px;
+    line-height: 35px;
     max-width: 520px;
     margin-bottom: 40px;
-    color: #6f6f71;
     font-family: var(--font-nunito);
   }
 
   &__img {
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/banner-big.png);
     filter: brightness(80%);
     background-size: cover;
     background-position: center;
@@ -103,6 +103,7 @@
 
   }
 }
+
 
 
 

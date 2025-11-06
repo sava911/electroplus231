@@ -15,9 +15,9 @@
     <div class="container">
       <div class="header__inner">
         <div class="logo">
-          <img src="images/icons/logo2.jpg" alt="Логотип">
-          <span>Master v pomoshch</span>
-          <!-- <b>Santekhnik
+          <!-- <img src="images/icons/logo2.jpg" alt="Логотип"> -->
+          <span>Mастер<i>Впомощь</i>.рф </span>
+          <!-- <b>Santekhnik v 
             Elektrik</b> -->
         </div>
 
@@ -32,11 +32,9 @@
         <div class="header__nav">
           <nav>
             <ul class="menu">
-              <li><a href="/portfolio" class="">Портфолио</a></li>
-              <li><a href="/blog" class="">Блог</a></li>
-              <li><a href="/services" class="">Услуги</a></li>
-              <li><a href="/comanda" class="">Команда</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#price" class="">Цены</a></li>
+              <li><a href="#about" class="">О нас</a></li>
+              <li><a href="#footer">Контакты</a></li>
             </ul>
           </nav>
           <div class="header__nav-icons">
@@ -73,17 +71,17 @@
     <div class="popup-overlay">
       <div class="popup-box">
         <button class="close-popup">&times;</button>
-        <h2 class="popup-title">Создадим партнерство?</h2>
+        <!-- <h2 class="popup-title">Создадим партнерство?</h2> -->
         <form action="">
           <div>
-            <label class="popup-modal__leb" for="fullName">Ваше Имя</label>
+            <label class="popup-modal__leb" for="fullName">Имя</label>
             <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Джонни Депп"
               required>
-            <label class="popup-modal__leb" for="phone">Номер телефона</label>
+            <label class="popup-modal__leb" for="phone">Телефона</label>
             <input class="popup-modal__input" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
               required>
           </div>
-          <label class="popup-modal__leb" for="textarea">Дополнительный текст</label>
+          <label class="popup-modal__leb" for="textarea">Проблема</label>
           <textarea class="popup-modal__area" name="textarea" id="textarea"></textarea>
 
           <label>
@@ -113,33 +111,32 @@
             <p class="bar__text">Профессиональная помощь в электрике и сантехнике. Быстро, качественно, надежно! Ремонт
               электропроводки, установка розеток, замена труб, подключение бытовой техники</p>
             <div class="bar__btns">
-              <button class="bar__btn btn">Заказать звонок</button>
+              <button class="bar__btn btn popup" data-popup-id="examplePopup">Узнать цену</button>
               <a class="bar__btn btn" href="tel:89968552494">Позвонить</a>
             </div>
             <div class="bar__items">
 
-              <div class="bar__item">
-                <h3 class="bar__item-title">300 000+</h3>
-                <p class="bar__item-text">Описание услуги</p>
+              <div class="bar__item bar__item_one">
+                <h3 class="bar__item-title">0 ₽</h3>
+                <p class="bar__item-text">Выезд мастера</p>
               </div>
-              <div class="bar__item">
-                <h3 class="bar__item-title">10+ лет</h3>
-                <p class="bar__item-text">Описание услуги</p>
+              <div class="bar__item bar__item_two">
+                <h3 class="bar__item-title">12 мес.</h3>
+                <p class="bar__item-text">Гарантия на работу</p>
               </div>
-              <div class="bar__item">
-                <h3 class="bar__item-title">2-3 года</h3>
-                <p class="bar__item-text">Описание услуги</p>
+              <div class="bar__item bar__item_three">
+                <h3 class="bar__item-title">-10%</h3>
+                <p class="bar__item-text">Скидка пенсионерам</p>
               </div>
             </div>
           </div>
           <div class="bar__img">
-            <!-- <img src="images/banner.jpg" alt="man"> -->
           </div>
         </div>
       </div>
     </section>
     <!-- price -->
-    <section class="price">
+    <section id="price" class="price">
       <div class="container">
         <h2 class="title">Цены</h2>
         <div class="price-grid">
@@ -147,7 +144,7 @@
           <div class="price-item">
 
             <div class="price-item__title">
-              <img src="images/elec.jpg" alt="">
+              <img src="images/icons/Lamp.svg" alt="">
               <h3>Услуги электрика</h3>
             </div>
             <div class="price-list">
@@ -228,7 +225,7 @@
           <div class="price-item">
 
             <div class="price-item__title">
-              <img src="images/sant.jpg" alt="">
+              <img src="images/icons/pipe.svg" alt="">
               <h3>Услуги сантехника</h3>
             </div>
             <div class="price-list">
@@ -314,12 +311,11 @@
     <div class="form-top">
       <div class="container">
         <div class="form-top__inner">
-          <h2 class="form-top__title">Заявка на ремонт</h2>
-          <form class="form-top__forms">
-            <input type="text" name="name" placeholder="Ваше имя">
-            <input name="phone" id="phone" placeholder="Телефон*" required>
-            <button type="submit" class=" ">Заказать звонок</button>
-          </form>
+
+          <div class="form-top__forms">
+            <h2 class="form-top__title">Заявка на ремонт</h2>
+            <button class=" ">Заказать звонок</button>
+          </div>
         </div>
       </div>
     </div>
@@ -332,44 +328,42 @@
           <div class="services-item">
             <div class="services-item_wr">
               <img src="images/icons/dev.svg" alt="">
-              <h3>Service 1</h3>
+              <h3>Срочный выезд</h3>
             </div>
             <p>Description du service 1</p>
           </div>
           <div class="services-item">
             <div class="services-item_wr">
               <img src="images/icons/dev.svg" alt="">
-              <h3>Электрика в квартире</h3>
+              <h3>10+ лет на рынке</h3>
             </div>
-            <p>Просто оставьте заявку на сайте и получите скидку на ремонт сантехники от мастеров МБР-групп. Мы
-              перезвоним Вам уже
-              через 5 минут и подробно проконсультируем по всем вопросам.</p>
+            <p>Просто оставьте заявку </p>
           </div>
           <div class="services-item">
             <div class="services-item_wr">
               <img src="images/icons/dev.svg" alt="">
-              <h3>Service 1</h3>
+              <h3>Работаем по договору</h3>
             </div>
             <p>Description du service 1</p>
           </div>
           <div class="services-item">
             <div class="services-item_wr">
               <img src="images/icons/dev.svg" alt="">
-              <h3>Service 1</h3>
+              <h3>Закупка материала</h3>
             </div>
             <p>Description du service 1</p>
           </div>
           <div class="services-item">
             <div class="services-item_wr">
               <img src="images/icons/dev.svg" alt="">
-              <h3>Service 1</h3>
+              <h3>Опытная команда</h3>
             </div>
             <p>Description du service 1</p>
           </div>
           <div class="services-item">
             <div class="services-item_wr">
               <img src="images/icons/dev.svg" alt="">
-              <h3>Service 1</h3>
+              <h3>Оплата по окончании работ</h3>
             </div>
             <p>Description du service 1</p>
           </div>
@@ -378,15 +372,20 @@
       </div>
     </section>
     <!-- about -->
-    <section class="about">
+    <section id='about' class="about">
       <div class="container">
         <h2 class="title">О нас</h2>
         <div class="about__inner">
-          <img class="about__img" src="images/man.jpg" alt="man">
+          <picture>
+            <source srcset="images/man-mob.jpg" media="(max-width: 768px)">
+            <!-- <source srcset="image-medium.jpg" media="(max-width: 1024px)"> -->
+            <source srcset="images/man-mob.jpg">
+            <img class="about__img" src="images/man-mob.jpg" alt="Image description">
+          </picture>
+          <!-- <img class="about__img" src="images/man.jpg" alt="man"> -->
           <div class="about__info">
             <h3 class="about__title">Mастер в помощь рф</h3>
             <div class="about__info-wr">
-              <!-- <img src="images/icons/yandex_business.svg" alt=""> -->
               <p class="about__text">Мы команда профессиональных электриков и сантехников, готовых решить любые
                 задачи,
                 связанные с электромонтажом и
@@ -427,16 +426,16 @@
         </div>
         <div class="about__items">
           <div class="about__item">
-            <h3 class="about__item-title">100 000+ ₽</h3>
-            <p class="about__item-text">Описание услуги</p>
+            <h3 class="about__item-title">100 000+ </h3>
+            <p class="about__item-text">Выполненных работ</p>
           </div>
           <div class="about__item">
             <h3 class="about__item-title">300 000+</h3>
             <p class="about__item-text">Описание услуги</p>
           </div>
           <div class="about__item">
-            <h3 class="about__item-title">10+ лет</h3>
-            <p class="about__item-text">Описание услуги</p>
+            <h3 class="about__item-title">11+</h3>
+            <p class="about__item-text">опытных мастеров </p>
           </div>
           <div class="about__item">
             <h3 class="about__item-title">2-3 года</h3>
@@ -446,7 +445,7 @@
       </div>
     </section>
     <!-- FAQ -->
-    <section class="faq">
+    <section id="faq" class="faq">
       <div class="container">
         <h2 class="title">Часто задаваемые вопросы</h2>
         <div class="details__inner">
@@ -454,11 +453,10 @@
             <div class="details">
               <details class="details__container">
                 <summary class="details__summary">
-                  <!-- The title -->
+
                   <h2 class="details__title"> Как правильно выбрать специалиста?</h2>
                 </summary>
               </details>
-              <!-- The content -->
               <div class="details__desc">
                 <div class="details__desc-inner">
 
@@ -476,12 +474,10 @@
             <div class="details">
               <details class="details__container">
                 <summary class="details__summary">
-                  <!-- The title -->
                   <h2 class="details__title">Что входит в стоимость ремонта электропроводки?
                   </h2>
                 </summary>
               </details>
-              <!-- The content -->
               <div class="details__desc">
                 <div class="details__desc-inner">
                   Стоимость ремонта зависит от многих факторов: объема работ, сложности проекта, используемых
@@ -502,11 +498,9 @@
             <div class="details">
               <details class="details__container">
                 <summary class="details__summary">
-                  <!-- The title -->
                   <h2 class="details__title">Нужно ли менять всю старую проводку сразу?</h2>
                 </summary>
               </details>
-              <!-- The content -->
               <div class="details__desc">
                 <div class="details__desc-inner">
                   Если старая проводка исправна и соответствует современным требованиям безопасности, её замена
@@ -520,34 +514,14 @@
                 </div>
               </div>
             </div>
+
             <div class="details">
               <details class="details__container">
                 <summary class="details__summary">
-                  <!-- The title -->
-                  <h2 class="details__title">Можно ли самому установить розетки и светильники?</h2>
-                </summary>
-              </details>
-              <!-- The content -->
-              <div class="details__desc">
-                <div class="details__desc-inner">
-                  Установка простых бытовых розеток и светильников возможна самостоятельно, однако для сложных
-                  электромонтажных работ
-                  лучше привлечь профессионала. Электрик сможет обеспечить безопасность монтажа, соблюдение норм и
-                  стандартов, правильный
-                  подбор мощности устройств и защитить вас от возможных ошибок, приводящих к коротким замыканиям или
-                  пожарам.
-                </div>
-              </div>
-            </div>
-            <div class="details">
-              <details class="details__container">
-                <summary class="details__summary">
-                  <!-- The title -->
                   <h2 class="details__title">Какие гарантии предоставляются на выполненные работы?
                   </h2>
                 </summary>
               </details>
-              <!-- The content -->
               <div class="details__desc">
                 <div class="details__desc-inner">
                   Профессиональные электрики предоставляют гарантию на выполненную работу, сроки которой зависят от
@@ -567,11 +541,9 @@
             <div class="details">
               <details class="details__container">
                 <summary class="details__summary">
-                  <!-- The title -->
                   <h2 class="details__title">Сколько стоит вызвать сантехника на дом?</h2>
                 </summary>
               </details>
-              <!-- The content -->
               <div class="details__desc">
                 <div class="details__desc-inner">
                   Цена вызова сантехника зависит от региона, срочности работы и характера выполняемых действий.
@@ -583,33 +555,15 @@
                 </div>
               </div>
             </div>
+
             <div class="details">
               <details class="details__container">
                 <summary class="details__summary">
-                  <!-- The title -->
-                  <h2 class="details__title">Что включает стандартный выезд сантехника?</h2>
-                </summary>
-              </details>
-              <!-- The content -->
-              <div class="details__desc">
-                <div class="details__desc-inner">
-                  Обычный визит сантехника включает диагностику неисправностей, консультацию клиента, выполнение
-                  необходимых ремонтных
-                  мероприятий и последующую проверку качества проделанной работы. Это может включать замену прокладок,
-                  ремонт смесителей,
-                  прочистку засоров, установку унитазов, раковин и прочих элементов санитарно-технического
-                  оборудования.
-                </div>
-              </div>
-            </div>
-            <div class="details">
-              <details class="details__container">
-                <summary class="details__summary">
-                  <!-- The title -->
+
                   <h2 class="details__title">Могу ли я присутствовать во время работы сантехника?</h2>
                 </summary>
               </details>
-              <!-- The content -->
+
               <div class="details__desc">
                 <div class="details__desc-inner">
                   Да, вы можете находиться рядом с рабочим местом сантехника и наблюдать за процессом. Однако будьте
@@ -625,11 +579,11 @@
             <div class="details">
               <details class="details__container">
                 <summary class="details__summary">
-                  <!-- The title -->
+
                   <h2 class="details__title">Насколько быстро устраняются стандартные неисправности?</h2>
                 </summary>
               </details>
-              <!-- The content -->
+
               <div class="details__desc">
                 <div class="details__desc-inner">
                   Время устранения стандартных неполадок зависит от их сложности и доступности нужных запчастей.
@@ -644,11 +598,11 @@
             <div class="details">
               <details class="details__container">
                 <summary class="details__summary">
-                  <!-- The title -->
+
                   <h2 class="details__title">Предоставляет ли мастер гарантию на свою работу?</h2>
                 </summary>
               </details>
-              <!-- The content -->
+
               <div class="details__desc">
                 <div class="details__desc-inner">
                   Большинство профессиональных сантехников предоставляют гарантию на выполненные работы сроком от 3
@@ -695,14 +649,8 @@
                   мне произвести элекрофикацию нового двухэтажного дачного дома. Электрики всю работу сде от али
                   быстро,
                   качественно и
-                  не
-                  дорого. Сделали разводку по всему дому, развели антенные провода и линии интернет и установили в
-                  доме
-                  электро щит.
-                  Протянули линию к столбу и подключили к сети. Установили заземление и выдали на все необходимые
-                  документы.
-                  Представителями Россетей МО и Мосэнергосбыт даны очень высокие отзывы при осмотре работы. Я
-                  ответственно рекомендую
+
+
                   эту
                   организацию как отличных мастеров своего дела.</p>
               </div>
@@ -725,19 +673,7 @@
               <div class="reviews__text">
                 <p>Я очень довольн работой мастеров электриков. Я в прошлом сам мастер электрик проработал сорок лет
                   но
-                  возраст не
-                  позволял
-                  мне произвести элекрофикацию нового двухэтажного дачного дома. Электрики всю работу сде от али
-                  быстро,
-                  качественно и
-                  не
-                  дорого. Сделали разводку по всему дому, развели антенные провода и линии интернет и установили в
-                  доме
-                  электро щит.
-                  Протянули линию к столбу и подключили к сети. Установили заземление и выдали на все необходимые
-                  документы.
-                  Представителями Россетей МО и Мосэнергосбыт даны очень высокие отзывы при осмотре работы. Я
-                  ответственно рекомендую
+
                   эту
                   организацию как отличных мастеров своего дела.</p>
               </div>
@@ -762,17 +698,7 @@
                   но
                   возраст не
                   позволял
-                  мне произвести элекрофикацию нового двухэтажного дачного дома. Электрики всю работу сде от али
-                  быстро,
-                  качественно и
-                  не
-                  дорого. Сделали разводку по всему дому, развели антенные провода и линии интернет и установили в
-                  доме
-                  электро щит.
-                  Протянули линию к столбу и подключили к сети. Установили заземление и выдали на все необходимые
-                  документы.
-                  Представителями Россетей МО и Мосэнергосбыт даны очень высокие отзывы при осмотре работы. Я
-                  ответственно рекомендую
+
                   эту
                   организацию как отличных мастеров своего дела.</p>
               </div>
@@ -797,19 +723,7 @@
                   но
                   возраст не
                   позволял
-                  мне произвести элекрофикацию нового двухэтажного дачного дома. Электрики всю работу сде от али
-                  быстро,
-                  качественно и
-                  не
-                  дорого. Сделали разводку по всему дому, развели антенные провода и линии интернет и установили в
-                  доме
-                  электро щит.
-                  Протянули линию к столбу и подключили к сети. Установили заземление и выдали на все необходимые
-                  документы.
-                  Представителями Россетей МО и Мосэнергосбыт даны очень высокие отзывы при осмотре работы. Я
-                  ответственно рекомендую
-                  эту
-                  организацию как отличных мастеров своего дела.</p>
+                  го дела.</p>
               </div>
             </div>
 
@@ -828,10 +742,10 @@
           </div>
           <div class="form-bottom__forms">
             <form action="#" method="post">
-              <input type="text" name="name" placeholder="Ваше имя">
-              <input name="phone" id="phone" placeholder="Телефон*" required>
-              <textarea name="message" placeholder="Ваше сообщение"></textarea>
-              <button type="submit" class=" ">Заказать звонок</button>
+              <input class="form-bottom__input" type="text" name="name" placeholder="Имя">
+              <input class="form-bottom__input phones" name="phone" placeholder="Телефон*" required>
+              <textarea class="form-bottom__tarea" name="message" placeholder="Проблема"></textarea>
+              <button class="form-bottom__btn" type="submit" class=" ">Заказать звонок</button>
             </form>
 
           </div>
@@ -848,12 +762,11 @@
         <div class="footer-column">
           <h3>Навигация</h3>
           <ul class="footer-links">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Nos services</a></li>
-            <li><a href="#">Méthodologie</a></li>
-            <li><a href="#">Témoignages</a></li>
-            <li><a href="#">Événements</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#price" class="">Цены</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#about" class="">О нас</a></li>
+            <li><a href="#">Часто задаваемые вопросы</a></li>
+            <li><a href="#">Отзывы</a></li>
           </ul>
         </div>
 
@@ -887,7 +800,7 @@
             </div>
 
             <div class="contact-item">
-              <span><a class="header__tel" href="tel:+79968552494">8 996-855-24-94</a></span>
+              <span><a class="footer__nav-tel" href="tel:+79968552494">8 996-855-24-94</a></span>
             </div>
 
           </div>

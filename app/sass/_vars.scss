@@ -12,7 +12,7 @@
   --font-heading: 'Playfair Display', Georgia, serif;
 
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.6);
   --shadow-lg: 0 8px 16px rgba(0,
       245,
       212, 0.2);
@@ -27,6 +27,7 @@
 .title {
   font-family: var(--font-unbounded);
   font-size: 44px;
+  line-height: 45px;
   font-weight: 500;
   border-bottom: 2px solid var(--acc-color);
   width: fit-content;

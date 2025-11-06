@@ -1,5 +1,5 @@
 $(function () {
-  [].forEach.call(document.querySelectorAll('#phone'), function (input) {
+  [].forEach.call(document.querySelectorAll('.phones'), function (input) {
     let keyCode;
     function mask(event) {
       event.keyCode && (keyCode = event.keyCode);

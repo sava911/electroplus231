@@ -1,5 +1,5 @@
 .price {
-  margin-bottom: 40px;
+  margin-bottom: 120px;
 }
 
 .container {}
@@ -22,11 +22,15 @@
     margin-bottom: 20px;
 
     img {
-      height: 48px;
-      width: 48px;
+      height: 60px;
+      width: 60px;
+      padding: 5px;
       border-radius: 50%;
       object-fit: cover;
       object-position: center top;
+      background: var(--acc-color);
+      box-shadow: var(--shadow-md);
+      // box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     }
 
 
@@ -57,7 +61,7 @@
 .itemName {
   // font-size: 1.8em;
   font-size: 16px;
-  font-family: var(--font-main);
+  font-family: var(--font-nunito);
   font-weight: 700;
   position: relative;
 

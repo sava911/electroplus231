@@ -33,6 +33,11 @@
    //  z-index: 1;
  }
 
+ .footer-links {
+   font-weight: 500;
+   font-family: var(--font-unbounded);
+ }
+
  .footer-column h3 {
    font-family: var(--font-unbounded);
    font-size: 1.5rem;
@@ -104,7 +109,7 @@
  .contact-item {
    display: flex;
    align-items: flex-start;
-   margin-bottom: 1rem;
+   margin-bottom: 20px;
 
 
  }
@@ -113,6 +118,7 @@
    background: var(--acc-color);
    border-radius: 15px;
    padding: 5px;
+   margin-bottom: 15px;
    //  display: flex;
    //  align-items: center;
    //  justify-content: center;
@@ -127,14 +133,17 @@
  //    height: 45px;
  //  }
 
- .contact-item span {
-   font-size: 0.95rem;
-   line-height: 1.5;
-   padding-left: 10px;
+ .contact-item p {
+   //  font-size: 0.95rem;
+   font-size: 16px;
+   line-height: 16px;
+   //  padding-left: 10px;
 
-   a {
-     font-size: 1.95rem;
-   }
+
+ }
+
+ .footer__nav-tel {
+   display: none;
  }
 
  /* Social Links */
