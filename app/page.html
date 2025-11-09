@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Mастер в помощь</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <!-- <img src="images/icons/logo2.jpg" alt="Логотип"> -->
+          <span>Mастер<i>Впомощь</i>.рф </span>
+          <!-- <b>Santekhnik v 
+            Elektrik</b> -->
+        </div>
+
+
+
+        <button class="burger-menu" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="header__nav">
+          <nav>
+            <ul class="menu">
+              <li><a href="#price" class="">Цены</a></li>
+              <li><a href="#about" class="">О нас</a></li>
+              <li><a href="#footer">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__nav-icons">
+            <a href="#"><img src="images/icons/Whatsapp.svg" alt="WhatsApp"></a>
+            <a href="#"><img src="images/icons/telegram.svg" alt="Telegram"></a>
+            <a href="#"><img class="header__icons-tel" src="images/icons/tel.svg" alt="tel"></a>
+          </div>
+          <a class="header__nav-tel" href="tel:+79968552494">+7 996-855-24-94</a>
+
+        </div>
+
+        <button type="button" class="blue_btn btn popup" data-popup-id="examplePopup">
+          <span class="blue_btn__title ">Вызвать мастера</span>
+          <!---->
+        </button>
+        <div class="header__social">
+          <div class="header__icons">
+            <a href="#"><img src="images/icons/Whatsapp.svg" alt="WhatsApp"></a>
+            <a href="#"><img src="images/icons/telegram.svg" alt="Telegram"></a>
+            <a href="#"><img class="header__icons-tel" src="images/icons/tel.svg" alt="tel"></a>
+          </div>
+        </div>
+        <a class="header__tel" href="tel:+79968552494">+7 996-855-24-94</a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Append Popups Here -->
+  <div class="site-popups"></div>
+
+  <!-- Hidden Popup Template (Can be cloned or reused) -->
+  <div id="examplePopup" class="popup-modal" style="display: none;">
+    <div class="popup-overlay">
+      <div class="popup-box">
+        <button class="close-popup">&times;</button>
+        <!-- <h2 class="popup-title">Создадим партнерство?</h2> -->
+        <form action="">
+          <div>
+            <label class="popup-modal__leb" for="fullName">Имя</label>
+            <input class="popup-modal__input" type="text" id="fullName" name="fullName" placeholder="Джонни Депп"
+              required>
+            <label class="popup-modal__leb" for="phone">Телефона</label>
+            <input class="popup-modal__input" type="tel" id="phone" name="phone" placeholder="+7 (996) 855-2494"
+              required>
+          </div>
+          <label class="popup-modal__leb" for="textarea">Проблема</label>
+          <textarea class="popup-modal__area" name="textarea" id="textarea"></textarea>
+
+          <label>
+            <input class="popup-modal__chek" type="radio" name="faux_checkbox" value="0" checked>
+            <span>Я даю согласие на обработку моих персональных данных в соответствии с политикой
+              конфиденциальности</span>
+          </label>
+
+          <button type="submit" class="popup-modal__btn btn">Отправить</button>
+          <p class="privacy-note">🔒 Ваша информация в безопасности и никогда не будет передана третьим лицам.
+            <a href="#">политики конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <main>
+    <!-- blog -->
+    <section class="blog">
+      <div class="container">
+        <h2 class="blog__title">Блог</h2>
+        <div class="blog__inner">
+          <article class="blog__info">
+            <h3 class="blog__item-title">Заголовок статьи</h3>
+            <p class="blog__item-text">Текст статьи</p>
+          </article>
+          <div class="blog__images">img</div>
+        </div>
+    </section>
+    <!-- form-top -->
+    <div class="form-top">
+      <div class="container">
+        <div class="form-top__inner">
+
+          <div class="form-top__forms">
+            <h2 class="form-top__title">Заявка на ремонт</h2>
+            <button class=" ">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="helper">
+      <div class="container">
+        <div class="helper__items">
+          <div class="helper__item">
+            <img class="helper__item-img" src="images/man-mob.jpg" alt="blog img">
+            <div class="helper__item-wr">
+              <h3 class="helper__item-title">Заголовок</h3>
+              <p class="helper__item-text">Профессиональная помощь в электрике и сантехнике.</p>
+            </div>
+          </div>
+          <div class="helper__item">
+            <img class="helper__item-img" src="images/man-mob.jpg" alt="blog img">
+            <div class="helper__item-wr">
+              <h3 class="helper__item-title">Заголовок</h3>
+              <p class="helper__item-text">Текст</p>
+            </div>
+          </div>
+          <div class="helper__item">
+            <img class="helper__item-img" src="images/man-mob.jpg" alt="blog img">
+            <div class="helper__item-wr">
+              <h3 class="helper__item-title">Заголовок</h3>
+              <p class="helper__item-text">Текст</p>
+            </div>
+          </div>
+          <div class="helper__item">
+            <img class="helper__item-img" src="images/man-mob.jpg" alt="blog img">
+            <div class="helper__item-wr">
+              <h3 class="helper__item-title">Заголовок</h3>
+              <p class="helper__item-text">Текст</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+
+        <!-- Colonne 2 - Liens rapides -->
+        <div class="footer-column">
+          <h3>Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="#price" class="">Цены</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#about" class="">О нас</a></li>
+            <li><a href="#">Часто задаваемые вопросы</a></li>
+            <li><a href="#">Отзывы</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 - Support -->
+        <div class="footer-column">
+          <h3>На карте</h3>
+
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac8b86268f401a99f4c43def53f25ec7b93fda5048afcab6682a5a26e45c00652&amp;source=constructor"
+            height="206" frameborder="0"></iframe>
+        </div>
+
+        <!-- Colonne 4 - Contact -->
+        <div class="footer-column">
+          <h3 class="logo">
+
+            <span>Resto<i>Web</i>Site</span>
+
+          </h3>
+
+          <div class="contact-info">
+
+            <img class="contact-star" src="images/otzivi.png" alt="mail">
+
+
+
+            <div class="contact-item">
+
+              <span>ИП Довженко Максим Юрьевич<br>ИНН 771980236208<br>ОГРН
+                771980236208<br>support@restowebsite.ru</span>
+            </div>
+
+            <div class="contact-item">
+              <span><a class="footer__nav-tel" href="tel:+79968552494">8 996-855-24-94</a></span>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy;
+          RestoWebSite. Все права защищены. | <a href="#">Правовое уведомление</a> | <a href="#">Политика использования
+            файлов cookie 🔒</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
