@@ -1,5 +1,6 @@
 $(function () {
 
+
   // scrol menu 
   $(document).ready(function () {
     $(document).on("scroll", onScroll);
@@ -81,4 +82,5 @@ $(function () {
     $('.burger-menu').removeClass('active');
     $('.header__nav').removeClass('active');
   });
+
 })

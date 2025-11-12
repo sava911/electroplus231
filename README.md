@@ -79,3 +79,7 @@ http://www.pingmyblog.com
 http://geourl.org/ping
 http://ipings.com
 http://www.weblogalot.com/ping
+
+<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/gallery.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>

@@ -30,8 +30,9 @@ function buildStyles() {
 function scripts() {
   return gulp.src([
     'node_modules/jquery/dist/jquery.js',
-    'app/js/main.js',
-    'app/js/telMask.js'
+    'app/js/gallery.js',
+    'app/js/main.js'
+    // 'app/js/telMask.js',
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
